@@ -22,7 +22,7 @@ var Poster = createClass({
 var Plot = createClass({
     render: function () {
         return (
-            <p>{this.props.plot}</p>
+            <h5>{this.props.plot}</h5>
         );
     }
 });
