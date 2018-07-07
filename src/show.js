@@ -1,39 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
 const createClass = require('create-react-class');
 
-var Title = createClass({
-    render: function () {
+class Title extends Component {
+    render() {
         return (
             <div>
                 <h1>{this.props.title}</h1>
             </div>
         );
     }
-});
+}
 
-var Poster = createClass({
-    render: function () {
+class Poster extends Component {
+    render() {
         return (
             <img src={this.props.poster} alt="poster" style={{ width: "300px", height: "300px", border: "1px solid gray" }} />
         );
     }
-});
+}
 
-var Plot = createClass({
-    render: function () {
-        return (
-            <h5>{this.props.plot}</h5>
+// var Plot = createClass({
+//     render: function () {
+//         return (
+//             <p>{this.props.plot}</p>
+//         );
+//     }
+// });
+
+
+class Plot extends Component {
+    render() {
+        return(
+            <p>{this.props.plot}</p>
         );
     }
-});
+}
 
-var IMDBRating = createClass({
-    render: function () {
-        return (
-            <h1>{this.props.imdbRating}</h1>
+class IMDBRating extends Component {
+    render() {
+        return(
+          <h3>{this.props.imdbRating}</h3>
         );
     }
-});
+}
 
 var Show = createClass({
     getDefaultProps: function () {
@@ -47,7 +56,7 @@ var Show = createClass({
         });
     },
     handleClick: function () {
-        var length= this.props.showApp.length;
+        var length = this.props.showApp.length;
         this.setState(function (prevState) {
             return ({
                 index: (prevState.index + 1) % length
