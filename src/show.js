@@ -30,7 +30,7 @@ var Plot = createClass({
 var IMDBRating = createClass({
     render: function () {
         return (
-            <p>{this.props.imdbRating}</p>
+            <h1>{this.props.imdbRating}</h1>
         );
     }
 });
