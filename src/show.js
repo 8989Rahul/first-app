@@ -31,7 +31,7 @@ class Poster extends Component {
 class Plot extends Component {
     render() {
         return (
-            <p>{this.props.plot}</p>
+            <h6>{this.props.plot}</h6>
         );
     }
 }
@@ -93,6 +93,7 @@ class Show extends Component {
             });
         });
     }
+
     render() {
         var showApp = this.props.showApp[this.state.index];
         return (
@@ -105,6 +106,7 @@ class Show extends Component {
             </div>
         );
     }
+
 }
 
 export default Show;
