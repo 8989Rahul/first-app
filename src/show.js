@@ -31,7 +31,7 @@ class Poster extends Component {
 class Plot extends Component {
     render() {
         return (
-            <h6>{this.props.plot}</h6>
+            <p>{this.props.plot}</p>
         );
     }
 }
@@ -39,7 +39,7 @@ class Plot extends Component {
 class IMDBRating extends Component {
     render() {
         return (
-           <h3>{this.props.imdbRating}</h3>
+            <h3>{this.props.imdbRating}</h3>
         );
     }
 }

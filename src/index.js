@@ -7,6 +7,6 @@ const showApp = require("./showsApp");
 
 ReactDOM.render(
 	<div className="tc">
-		<Show showApp={showApp}/>
+		<Show showApp={showApp} />
 	</div>
 	, document.getElementById('root'));
