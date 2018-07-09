@@ -39,7 +39,7 @@ class Plot extends Component {
 class IMDBRating extends Component {
     render() {
         return (
-            <h1>{this.props.imdbRating}</h1>
+            <h3>{this.props.imdbRating}</h3>
         );
     }
 }
