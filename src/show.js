@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // const createClass = require('create-react-class');
 
+// new code edited by 8989Rahul
+
 class Title extends Component {
     render() {
         return (
